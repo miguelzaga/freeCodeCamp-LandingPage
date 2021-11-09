@@ -1,0 +1,134 @@
+/* 
+*Guide
+https://codepen.io/freeCodeCamp/full/RKRbwL
+
+*Shoe photos
+https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fae01.alicdn.com%2Fkf%2FHTB1mE06mXooBKNjSZFPq6xa2XXa8%2F2018-Autumn-Sneakers-Women-White-Canvas-Shoes-Ladies-Flat-Heel-Casual-Shoes-Woman-White-Sneakers-Women.jpg&f=1&nofb=1
+https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-img.instyle.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F684xflex%2Fpublic%2F1537720216%2Fdownload-3.jpg%3Fitok%3DiAPndvAz&f=1&nofb=1
+
+---
+*Logo
+https://s3.amazonaws.com/cdn.designcrowd.com/blog/2019/07/45-shoe-logos/images/Shadow.jpg
+
+
+Color Palette
+
+*/
+
+.color1 {
+    color: #f2a88c;
+}
+
+.color2 {
+    color: #efd965;
+}
+
+.color3 {
+    color: #310b09;
+}
+
+.color4 {
+    color: #887673;
+}
+
+.color5 {
+    color: #f3eae8;
+}
+
+body {
+    background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    width: 100%;
+    margin: auto;
+    color: #310b09;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#nav-bar ul, footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+#header {
+    background: #efd965;
+    width: 100%;
+    height: 240px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header-img {
+    width: 100px;
+}
+
+main {
+    padding-top: 240px;
+    max-width: 600px;
+    margin: auto;
+}
+
+#video {
+    width: 100%;
+}
+
+#products {
+    display: flex;
+    flex-direction: column;
+}
+
+#products h3 {
+    color: #887673;
+}
+
+
+
+#products img {
+    width: 100%;
+    max-width: 500px;
+}
+
+#submit {
+    background: #efd965;
+}
+
+footer {
+    background: #f3eae8af;
+    margin-top: 50px;
+    padding: 5px 0;
+}
+
+@media (min-width: 768px) {
+    #header {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    #header-img {
+        width: auto;
+        max-width: 200px;
+    }
+    
+    #header-img, #nav-bar {
+        margin: 20px;
+        flex-grow: 1;
+    }
+
+    #header h1 {
+        flex-grow: 2;
+    }
+
+    #descriptions, #products, #form-section {
+        margin: 50px 0px;
+    }
+
+    #products article {
+        border: #f2a88c thin solid;
+        margin: 10px;
+    }
+
+    #products article:hover {
+        box-shadow: 10px 5px 5px #f2a88c;
+    }
+}
